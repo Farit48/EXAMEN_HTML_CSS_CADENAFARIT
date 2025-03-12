@@ -120,15 +120,16 @@ p , h4, h2{
         width: 100%;
         display: flex;
         justify-content: space-evenly;
+
     }
 
     /*****Pagina Inicio***/
     .MainInicio {
         /***Maquetacion***/
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         row-gap: 20%;
-        margin-top: 20px;
         
     }
     .MainInicio .Imagen img {
