@@ -1,0 +1,115 @@
+/***Variables propias*****/
+:root{
+    --fuente-nav:"Funnel Sans", sans-serif;
+    --fuente-text:"Italianno", cursive;
+}
+
+/****Globales***/
+.Header{
+    /***Maquetacion***/
+    display: flex;
+    justify-content: end;
+    gap: 60%;
+    width: 90%;
+    margin: auto;
+}
+.Header_Enlaces {
+    /***Maquetacion***/
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*****Pagina Inicio***/
+
+.MainInicio {
+    /***Maquetacion***/
+    margin-top: 100px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+/*****Pagina Menu***/
+.MainMenu {
+    text-align: center;
+    display: grid;
+    margin-top: 250px;
+    grid-template-columns: 20% 20% 20%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 10%;
+}
+/*****Pagina Quienes somos***/
+.MainQS {
+    text-align: center;
+}
+.MainQS_Contenido{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+}
+
+
+
+/****Responsive****/
+@media (max-width: 480px) {
+    /****Globales***/
+    .Header{
+        /***Maquetacion***/
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+    .Header_Enlaces {
+        /***Maquetacion***/
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*****Pagina Inicio***/
+    .MainInicio {
+        /***Maquetacion***/
+        display: flex;
+        flex-direction: column;
+        row-gap: 20%;
+        
+    }
+    .MainInicio .Imagen img {
+        margin-top: 150px;
+        width: 300px;
+    }
+
+    /*****Pagina Menu***/ 
+    .MainMenu {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*****Pagina Quienes somos***/
+    .MainQS {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .MainQS_Contenido{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .MainQS_Contenido  img {
+        
+        width: 400px;
+    }
+    
+}   
